@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="..\css\style.css">
+    <link rel="stylesheet" href="..\css\form.css">
+    <link rel="stylesheet" href="..\css\wave.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    
+    <title>Order Form</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="../img/header-img.png" class="logo"></a>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="review.html">Reviews</a></li>
+      <li><a href="form.html">Buy Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+  </header>
+
+    <section>
+        <!-- Order Form-->
+    <form action="form-done.html">
+      
+      <div class="title">
+      <h2>Order Form</h2>
+      </div>
+
+        
+        <div class="basic-info">
+        
+          <!--Name -->
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Morgan" required>
+
+            <span><label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Freeman" required>
+            </span>
+
+        
+        <br>
+        
+        <!-- Email -->
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="mgfreeman@gmail.com" maxlength="50" size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+          <span><label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass" maxlength="15" required>
+          </span>
+
+
+        <br>
+
+        <!--Mobile Number-->
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="(+123)-456-7890" maxlength="13" required>
+        
+        <!--Date of Birth-->
+            
+            <span><label for="bdate">Date of Birth:</label>
+            <input type="date" id="bdate" name="bdate">
+            </span>
+        
+        <br>
+</div>
+        <!--Text Area for Address-->
+
+        <div class="address">
+
+          <p class="item">Complete Address:</p>
+
+          <textarea id="textArea" name="textArea" rows="5" cols="35" placeholder="P. Sherman #42 Wallaby Way, Sydney" maxlength="100" required></textarea>
+
+        </div>
+
+        <br>
+
+        <!--Choose Product Check Box-->
+        <div class="product">
+        <p>Choose Your Banez-Ola! Flavor</p>
+          
+
+          <!-- <img src="..\img\banezola001.png" class="banezola001"> -->
+          
+          <input type="checkbox" id="check1" name="check1" value="check1"> <label for="check1">Blue Winter Madness</label>
+       
+          
+          <!-- <img src="..\img\banezola002.png" class="banezola002"> -->
+        <br>
+          <input type="checkbox" id="check2" name="check2" value="check2">
+          <label for="check2">Sahara Fierce Confidence</label>
+        <br>
+  
+          <!-- <img src="..\img\banezola003.png" class="banezola003"> -->
+   
+          <input type="checkbox" id="check3" name="check3" value="check3">
+          <label for="check3">Sugar Free Galaxy</label>
+
+     
+          </div>
+         
+        <!--Quantity-->
+        <div class="quantity">
+          <p>How many will you order? <br> (Max of 10 orders per shipment)</p>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+        </div>
+        <br>
+
+        <!-- Payment Method Drop Down -->
+        <div class="payment">
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment">
+                <option value="visa">Visa Card</option>
+                <option value="credit">Credit Card</option>
+                <option value="gcash">G Cash</option>
+                <option value="paypal">Pay Pal</option>
+                <option value="cod">Cash On Delivery</option>
+            </select>
+        
+        
+        <br>
+
+        <!-- Radio for Shipment Type-->
+        
+
+          <label for="shipment">Shipment Type:</label>
+          <br>
+          <input type="radio" id="standard-ship" name="shipment" value="standard-ship">
+          <label for="standard-ship">Standard Shipping (3-5 days)</label>
+          
+          <br>
+
+          <input type="radio" id="premium-ship" name="shipment" value="premium-ship">
+          <label for="premium-ship">Premium Shipping (1-2 days)</label>
+        
+        </div>
+
+
+        <!--Submit Button-->
+        
+        <button class="btn">
+            Place Order
+        </button>
+
+    </form>
+
+
+    <!-- Modal -->
+    <button id="myBtn">🌊</button>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟🐟</p>
+  </div>
+</div>
+
+    <!--Actual Waves-->
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </div>
+</section>
+
+
+  <!-- Social Media -->
+  <side>
+    <ul class="sci">
+      <li><a href="https://www.facebook.com/groups/reactjsphilippines/permalink/5956159354433790/?sfnsn=mo&ref=share&mibextid=VhDh1V" target="_blank"><img src="../img/facebook.png"></a></li>
+      <li><a href="#"><img src="../img/twitter.png"></a></li>
+      <li><a href="https://www.instagram.com/katefloresbanez/"><img src="../img/instagram.png"></a></li>
+    </ul>
+  </side>
+  <script src="app.js"></script>
+</body>
+</html>

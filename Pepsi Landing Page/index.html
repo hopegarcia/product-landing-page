@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Project Beta</title>
+  <link rel="stylesheet" href="..\css\style.css">
+</head>
+<body>
+    <section class="sec">
+      <header>
+        <a href="index.html"><img src="../img/header-img.png" class="logo"></a>
+        <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="review.html">Reviews</a></li>
+          <li><a href="form.html">Buy Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      </header>
+      
+      <div class="content">
+        <div class="textBox">
+          <h2>the new drink <br><span>Banez-Ola!</span></h2>
+          <p>Savor the authentic taste of our beverage, crafted from a secret recipe passed down through generations. Our fresh ingredients and unique blend of spices capture the essence of our ancestral heritage, making each sip a journey through cultural traditions. Discover the hidden secrets of this cherished drink and taste the history in every bottle.</p>
+          <a href="form.html">Buy Now</a>
+        </div>
+        <div class="imgBox">
+          <img src="../img/banezola001.png" class="banezola">
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="../img/banezola001.png" onclick="imgSlider('../img/banezola001.png');changeBgColor('#0062be')"></li>
+        <li><img src="../img/banezola002.png" onclick="imgSlider('../img/banezola002.png');changeBgColor('#e60c2c')"></li>
+        <li><img src="../img/banezola003.png" onclick="imgSlider('../img/banezola003.png');changeBgColor('#1e1e1e')"></li>
+      </ul>
+      <ul class="sci">
+        <li><a href="https://www.facebook.com/groups/reactjsphilippines/permalink/5956159354433790/?sfnsn=mo&ref=share&mibextid=VhDh1V" target="_blank"><img src="../img/facebook.png"></a></li>
+        <li><a href="#"><img src="../img/twitter.png"></a></li>
+        <li><a href="https://www.instagram.com/katefloresbanez/"><img src="../img/instagram.png"></a></li>
+      </ul>
+    </section>
+
+
+    <script type="text/javascript">l
+      function imgSlider(anything){
+        document.querySelector('.banezola').src = anything;
+      }
+      function changeBgColor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+      }
+    </script>
+</body>
+</html>

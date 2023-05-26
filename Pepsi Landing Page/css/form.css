@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" );
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+  background-color: #0062be;
+}
+
+header
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: #0062be;
+}
+
+
+button 
+{
+  padding: 1em;
+  border-radius: 15px;
+}
+
+form 
+{
+  border-radius: 20px;
+  padding-bottom: 50vh;
+  width: clamp (500px, 50% , 700px);
+  background-color: rgb(111, 179, 235);
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 10% 25% 35% 25% 10%;
+  grid-template-areas:
+  "title title"
+  "basic-info basic-info"
+  "address product"
+  "quantity payment"
+  "0 btn"
+
+}
+
+h2
+{
+  text-align: center;
+}
+
+.sci
+{
+  position: fixed;
+}
+
+
+/* .banezola001 , .banezola002 , .banezola003
+{
+  width: 40px;
+} */
+
+
+.title
+{
+  grid-area: title;
+}
+
+.basic-info
+{
+  grid-area: basic-info;
+}
+
+.address
+{
+  grid-area: address;
+}
+
+.product
+{
+  grid-area: product;
+}
+
+.quantity
+{
+  grid-area: quantity;
+}
+
+.payment
+{
+  grid-area: payment;
+}
+
+.btn
+{
+  grid-area: btn;
+}
+
+#myBtn
+{
+  grid-area: myBtn;
+}
+
+/* Modal */
+.modal {
+  margin-left: 2em;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  /* border-radius: 50%; */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Place Order */
+.btn:hover
+{
+  background-color: #6bd7f8;
+}
+
+.btn 
+{
+  max-width: fit-content;
+  margin-left: 60%;
+  
+}
